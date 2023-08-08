@@ -17,7 +17,7 @@ const NavBar = ({ activeTab, setActiveTab }) => {
 
   // Function to check if the current location matches the default path
   const isDefaultPath = () => {
-    return location.pathname === '/' || location.pathname === '/20-ReactPortfolio' || location.pathname === '';
+    return location.pathname === '/' || location.pathname === '/20-ReactPortfolio/' || location.pathname === '/20-ReactPortfolio' || location.pathname === '';
   }; 
 
   return (
