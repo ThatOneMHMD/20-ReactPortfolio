@@ -1,13 +1,15 @@
+// import required data
 import React from 'react'
 import '../index.css';
 
+// component:
 const About = () => {
-    // javascript here
   return (
 
+    // parent div
     <div className="about-container">
       <div className="about-card">
-        <h1>Hello, This is the About Me Section</h1>
+        <h1>I am what you are looking for!</h1>
         <img
           className="profile-picture"
           src="https://thatonemhmd.github.io/02-MyProtfolio-MuhammadAtrach-/assets/images/Muhammad%20in%20UofT%20hoodie%20cropped.jpg"
@@ -21,7 +23,8 @@ const About = () => {
             to excel in my field and deliver top-notch projects to clients.
           </p>
           <p>
-          <strong>What Sets Me Apart</strong>
+            <strong>What Sets Me Apart</strong>
+          </p>
           <ul>
             <li>🚀 Unstoppable Drive: I thrive on challenges and embrace the opportunity to solve complex problems.</li>
             <li>💡 Innovative Mindset: I'm constantly exploring new technologies and best practices to stay at the forefront of the ever-evolving tech landscape.</li>
@@ -29,7 +32,7 @@ const About = () => {
             <li>🤝 Collaborative Spirit: As a team player, I excel in fostering open communication and working collaboratively with cross-functional teams.</li>
             <li>🌟 Passion for Learning: Learning is at the core of my journey. I'm continuously seeking opportunities to expand my knowledge and expertise.</li>
           </ul>
-        </p>
+        
         </div>
       </div>
     </div>
@@ -37,4 +40,5 @@ const About = () => {
   )
 }
 
+// export component
 export default About

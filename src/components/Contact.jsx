@@ -2,19 +2,25 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 
 const Contact = () => {
+
+  // State to manage form data (name, email, and message)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
 
+  // State to track whether required fields are filled or not
   const [requiredFields, setRequiredFields] = useState({
     name: false,
     email: false,
     message: false,
   });
 
+  // State to manage submission status message
   const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  // State to store form messages for future improvements
   const [formMessage, setFormMessage] = useState([]);
 
   // useEffect for handling formMessage changes: FOR FUTURE IMPROVEMENTS (can use this to save messages or connect them to an API that sendds an actual email to a designated one, etc.)
@@ -23,6 +29,7 @@ const Contact = () => {
     console.log('Form Message Updated:', formMessage);
   }, [formMessage]);
 
+  // Function to handle form input changes (name, email, and message)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -31,6 +38,7 @@ const Contact = () => {
     }));
   };
 
+  // Function to handle blur event on form inputs to check required fields (when losing focus on inputs: clicking somehwere else)
   const handleBlur = (e) => {
     const { name, value } = e.target;
     if (!value.trim()) {
@@ -46,6 +54,7 @@ const Contact = () => {
     }
   };
 
+  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -66,11 +75,11 @@ const Contact = () => {
         message: '',
       });
   
-      // Clear the success message after one second
+      // Clear the success message one second
       setTimeout(() => {
         
         setSubmissionStatus(null);
-      }, 500);
+      }, 1000);
     }, 300);
   };
 

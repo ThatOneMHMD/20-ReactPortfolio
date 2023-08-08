@@ -1,33 +1,53 @@
 import React from 'react'
 import '../index.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
+// component is using destrucutred props from APP.js:
+// - activeTab: Currently active tab name.
+// - setActiveTab: Function to set the active tab.
 const NavBar = ({ activeTab, setActiveTab }) => {
 
-  const handleNavClick = (tab) => {
-    setActiveTab(tab);
+  // Get the current location using the useLocation hook
+  const location = useLocation();
 
+  // Function to check if a given link is active based on the current location
+  const isLinkActive = (path) => {
+    return location.pathname === path;
   };
 
-  console.log(activeTab)
+  // Function to check if the current location matches the default path
+  const isDefaultPath = () => {
+    return location.pathname === '/' || location.pathname === '';
+  };
 
   return (
     <div className='nav'>
       
       <h1 className='headerTextWithShadow'>
 
-        {/* Apply the logo in the future and make it a link that connectes back to the default tab */}
+        {/* Logo placholder: Apply the logo in the future and make it a link that connectes back to the default tab (img itself is ugly now so needs cropping...) */}
         {/* <img src="https://thatonemhmd.github.io/02-MyProtfolio-MuhammadAtrach-/assets/images/Muhammad%20full%20stack%20dev%20logo%202.png" alt="logo for Muhammad" /> */}
 
         Muhammad Atrach
         
       </h1>
 
+      {/* Navigation links: set correct path corersponding to clicked link and make it the active tab then apply the active CSS class! */}
       <ul className="navLinks">
-        <li><Link to="/about" class={activeTab==='about' ? "active" : ""} onClick={() => setActiveTab('about')}>About Me</Link></li>
-        <li><Link to="/contact" class={activeTab==='contact' ? "active" : ""} onClick={() => setActiveTab('contact')}>Contact</Link></li>
-        <li><Link to="/projects" class={activeTab==='projects' ? "active" : ""} onClick={() => setActiveTab('projects')}>Projects</Link></li>
-        <li><Link to="/resume" class={activeTab==='resume' ? "active" : ""} onClick={() => setActiveTab('resume')}>Resume</Link></li>
+      <li>
+          <Link to="/about" className={isLinkActive('/about') || isDefaultPath() ? "active" : ""}>About Me</Link>
+        </li>
+        <li>
+          <Link to="/contact" className={isLinkActive('/contact') ? "active" : ""}>Contact</Link>
+        </li>
+
+        {/* This is kept as Projects by choice! If I "needed" to switch it to Portfolio for any reason, I would have simply changed it by typing in that... */}
+        <li>
+          <Link to="/projects" className={isLinkActive('/projects') ? "active" : ""}>Projects</Link>
+        </li>
+        <li>
+          <Link to="/resume" className={isLinkActive('/resume') ? "active" : ""}>Resume</Link>
+        </li>
       </ul>
 
       
@@ -41,6 +61,4 @@ const NavBar = ({ activeTab, setActiveTab }) => {
 
 export default NavBar
 
-
-
-//////////// checkpoint!!!
+// checkpoint!!!

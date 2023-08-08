@@ -1,9 +1,13 @@
-// Projects.js (Projects component)
+// import required data
 import React from 'react';
 import '../index.css';
 
+// FUTURE DEVELOPMENT: MAKE SURE PICUTRES LOAD BEFORE RENDERING PAGE ETC.
+// FUTURE DEVELOPMENT: I WILL NOT BE changing the name (Projects) to PORTFOLIO since it sounds better the way it is right now!
+
 const Projects = () => {
   
+  // array of objects containing my projects
   const projectData = [
     {
       title: 'FitZone',
@@ -47,11 +51,13 @@ const Projects = () => {
       link: 'https://thatonemhmd.github.io/01-Horiseon-Marketing/',
       source: 'https://github.com/ThatOneMHMD/01-Horiseon-Marketing.git'
     },
-    // Add more project objects later on (future improvements)
+    // Add more project objects later on (future improvements!!)
   ];
 
   return (
     <div className="projects-grid">
+      {/* future development: make it so that only pic appears, once u click on it it becomes blurry then src for app and repo appear, etc. */}
+      {/* map out the project to appear in this format! */}
       {projectData.map((project, index) => (
         <div className="project-item" key={index}>
 
