@@ -8,11 +8,12 @@ import '../index.css';
 const Projects = () => {
   
   // array of objects containing my projects
+  // NOTE FOR FUTURE SELF: images can be gotten by adding them to an 'issue' on github, then copying the link to the image and pasting it here!
   const projectData = [
     {
       title: 'Event Hive',
       description: 'Your one-stop shop for all your event planning needs!',
-      imageUrl: '../assets/images/eventHive.png',
+      imageUrl: 'https://user-images.githubusercontent.com/126360257/261478049-ec38221a-dcff-4a47-a0ea-9e643bd46ce3.png',
       link: 'https://eventhive-d385699de8e6.herokuapp.com/',
       source: 'https://github.com/cynthiamory/EventHive'
     },
