@@ -10,6 +10,13 @@ const Projects = () => {
   // array of objects containing my projects
   const projectData = [
     {
+      title: 'Event Hive',
+      description: 'Your one-stop shop for all your event planning needs!',
+      imageUrl: '../assets/images/eventHive.png',
+      link: 'https://eventhive-d385699de8e6.herokuapp.com/',
+      source: 'https://github.com/cynthiamory/EventHive'
+    },
+    {
       title: 'FitZone',
       description: 'A portal for those who want to become the best version of themselves!',
       imageUrl: 'https://thatonemhmd.github.io/02-MyProtfolio-MuhammadAtrach-/assets/images/fitZone%20landing%20page.png',
@@ -51,6 +58,7 @@ const Projects = () => {
       link: 'https://thatonemhmd.github.io/01-Horiseon-Marketing/',
       source: 'https://github.com/ThatOneMHMD/01-Horiseon-Marketing.git'
     },
+
     // Add more project objects later on (future improvements!!)
   ];
 
