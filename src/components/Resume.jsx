@@ -4,7 +4,7 @@ import '../index.css';
 const Resume = () => {
     
   // create a path to my resume stored in a pdfs folder inside the public folder
-  const pdfFileName = 'resume.pdf';
+  const pdfFileName = 'Resume - 2023 Sep (Coding).pdf';
   const pdfPath = process.env.PUBLIC_URL + '/pdfs/' + pdfFileName;
 
   return (
