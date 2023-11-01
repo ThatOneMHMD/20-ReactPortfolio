@@ -218,6 +218,28 @@ code {
   box-sizing: border-box; 
 }
 
+.contact-loading{
+  /* this part just to keep the rest the same */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* loading changed... */
+  background-color: #d0d0d0; 
+  /* color: #fff;  */
+  cursor: not-allowed;
+}
+
 .contact-textarea {
   resize: vertical;
   height: 200px;

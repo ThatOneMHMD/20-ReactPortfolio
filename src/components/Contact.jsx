@@ -16,6 +16,8 @@ const Contact = () => {
   });
 
   const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
+
 
   const handleBlur = (e) => {
     const { name, value } = e.target;
@@ -43,6 +45,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Set loading to true when the form is being submitted
+    setLoading(true);
+
     emailjs
       .sendForm('service_rvdudav', 'template_jjym8b5', e.target, 'yz8Qe0hiLsuO3Ekz_') 
       .then(
@@ -59,7 +64,11 @@ const Contact = () => {
           console.log(error.text);
           setSubmissionStatus('Message submission failed.');
         }
-      );
+      )
+      .finally(() => {
+        // Reset loading state whether it's successful or failed
+        setLoading(false);
+      });
 
       setTimeout(() => {
         setSubmissionStatus(null);
@@ -124,9 +133,10 @@ const Contact = () => {
               <p className="required-field-notification">Message is required</p>
             )}
           </div>
-          <button type="submit" className="contact-submit">
-            Submit
+          <button type="submit" className={loading ? 'contact-loading' : 'contact-submit'} disabled={loading}>
+            {loading ? 'Sending Message...' : 'Submit'}
           </button>
+
         </form>
         {submissionStatus && (
           <p className="submission-success">{submissionStatus}</p>
