@@ -48,6 +48,11 @@ const NavBar = ({ activeTab, setActiveTab }) => {
         <li>
           <Link to="/resume" className={isLinkActive('/resume') ? "active" : ""}>Resume</Link>
         </li>
+
+        {/* <li>
+          <Link to="/interests" className={isLinkActive('/interests') ? "active" : ""}>Interests</Link>
+        </li> */}
+
       </ul>
 
       

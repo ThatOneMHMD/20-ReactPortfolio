@@ -3,6 +3,11 @@ import emailjs from 'emailjs-com';
 import '../index.css';
 
 const Contact = () => {
+
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,7 +54,11 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .sendForm('service_rvdudav', 'template_jjym8b5', e.target, 'yz8Qe0hiLsuO3Ekz_') 
+      .sendForm(
+        serviceId,
+        templateId, 
+        e.target, 
+        publicKey)  
       .then(
         (result) => {
           console.log(result.text);
