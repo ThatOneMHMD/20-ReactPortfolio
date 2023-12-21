@@ -69,7 +69,13 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
           <Route path="resume" element={<Resume />} />
-          <Route path="interests" element={<Interests />} />
+
+
+
+
+          {/* <Route path="interests" element={<Interests />} /> */}
+
+
         </Routes>
 
         <div className="video-container">

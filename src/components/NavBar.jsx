@@ -49,6 +49,9 @@ const NavBar = ({ activeTab, setActiveTab }) => {
           <Link to="/resume" className={isLinkActive('/resume') ? "active" : ""}>Resume</Link>
         </li>
 
+
+        {/* if the tab is ready, uncomment it out here and in APP.js */}
+
         {/* <li>
           <Link to="/interests" className={isLinkActive('/interests') ? "active" : ""}>Interests</Link>
         </li> */}

@@ -11,6 +11,13 @@ const Projects = () => {
   // NOTE FOR FUTURE SELF: images can be gotten by adding them to an 'issue' on github, then copying the link to the image and pasting it here!
   const projectData = [
     {
+      title: 'Recipe Finder',
+      description: 'For when your appetite is bigger than your imagination!',
+      imageUrl: 'https://private-user-images.githubusercontent.com/126360257/292290275-ed4e43c8-504c-4425-88d5-f25ebdab0646.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDMxODQ3ODUsIm5iZiI6MTcwMzE4NDQ4NSwicGF0aCI6Ii8xMjYzNjAyNTcvMjkyMjkwMjc1LWVkNGU0M2M4LTUwNGMtNDQyNS04OGQ1LWYyNWViZGFiMDY0Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIyMVQxODQ4MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMDhlNWExMjgwMjRmMGNmNjA3NGY4ODVhMjhhZTE2NzlmZWNhMDIwNzRjYzA2NGI4NDQ1NTkwNjBjYmNiMzVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.T0gWx3NT7hZfwBEsZSRWVpVevEKD_5V3zUQG05k-6k8',
+      link: 'https://thatonemhmd.github.io/recipe-finder/',
+      source: 'https://github.com/ThatOneMHMD/recipe-finder.git'
+    },
+    {
       title: 'Event Hive',
       description: 'Your one-stop shop for all your event planning needs!',
       imageUrl: 'https://user-images.githubusercontent.com/126360257/261478049-ec38221a-dcff-4a47-a0ea-9e643bd46ce3.png',
