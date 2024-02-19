@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/20-ReactPortfolio/static/css/main.f446b468.css",
-    "main.js": "/20-ReactPortfolio/static/js/main.42a373d3.js",
+    "main.js": "/20-ReactPortfolio/static/js/main.02f27c74.js",
     "static/js/787.a2cb61a6.chunk.js": "/20-ReactPortfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/4k background footage (ideal for Blockchain Website).mp4": "/20-ReactPortfolio/static/media/4k background footage (ideal for Blockchain Website).c54bd85a6e90d3f410bb.mp4",
     "static/media/maxresdefault (1).jpg": "/20-ReactPortfolio/static/media/maxresdefault (1).9822f172c11638f6fbe4.jpg",
     "index.html": "/20-ReactPortfolio/index.html",
     "main.f446b468.css.map": "/20-ReactPortfolio/static/css/main.f446b468.css.map",
-    "main.42a373d3.js.map": "/20-ReactPortfolio/static/js/main.42a373d3.js.map",
+    "main.02f27c74.js.map": "/20-ReactPortfolio/static/js/main.02f27c74.js.map",
     "787.a2cb61a6.chunk.js.map": "/20-ReactPortfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f446b468.css",
-    "static/js/main.42a373d3.js"
+    "static/js/main.02f27c74.js"
   ]
 }
