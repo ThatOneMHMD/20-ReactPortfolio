@@ -14,6 +14,7 @@ const Projects = () => {
       title: 'Recipe Finder',
       description: 'For when your appetite is bigger than your imagination!',
       imageUrl: 'https://github.com/ThatOneMHMD/20-ReactPortfolio/assets/126360257/1fcd40e0-b8ee-42a8-861c-d6900e8abd67',
+      link: 'https://thatonemhmd.github.io/recipe-finder/',
       source: 'https://github.com/ThatOneMHMD/recipe-finder.git'
     },
     {
