@@ -11,6 +11,13 @@ const Projects = () => {
   // NOTE FOR FUTURE SELF: images can be gotten by adding them to an 'issue' on github, then copying the link to the image and pasting it here!
   const projectData = [
     {
+      title: 'Insulin & Dopamine',
+      description: 'Unlock the secrets of insulin and dopamine with our comprehensive review research article!',
+      imageUrl: 'https://github.com/ThatOneMHMD/research-insulin-dopamine/assets/126360257/e892c390-e655-4ece-948c-4ad2b6414ab8',
+      link: 'https://thatonemhmd.github.io/research-insulin-dopamine/',
+      source: 'https://github.com/ThatOneMHMD/research-insulin-dopamine.git'
+    },
+    {
       title: 'Recipe Finder',
       description: 'For when your appetite is bigger than your imagination!',
       imageUrl: 'https://github.com/ThatOneMHMD/20-ReactPortfolio/assets/126360257/1fcd40e0-b8ee-42a8-861c-d6900e8abd67',
